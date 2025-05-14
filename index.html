@@ -4,84 +4,140 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Denavo Health</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: 'Segoe UI', sans-serif;
+      font-family: 'Open Sans', sans-serif;
       margin: 0;
+      padding: 0;
       background-color: #f8f9fa;
       color: #333;
     }
     header {
       background-color: #006D77;
+      padding: 1rem;
       color: white;
-      padding: 2rem 1rem;
       text-align: center;
     }
     header img {
-      max-width: 200px; /* Adjust the size of the logo */
+      max-width: 180px;
       height: auto;
     }
-    .tagline {
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem 0;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      text-transform: uppercase;
+    }
+    nav a:hover {
+      border-bottom: 2px solid #ffcc00;
+    }
+    .hero {
+      background-image: url('https://via.placeholder.com/1500x500'); /* Replace with your own image */
+      background-size: cover;
+      background-position: center;
+      color: white;
+      padding: 100px 20px;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      margin: 0;
+    }
+    .hero p {
       font-size: 1.2rem;
-      margin-top: 0.5rem;
+      margin-top: 1rem;
     }
-    section {
-      padding: 2rem 1rem;
-      max-width: 900px;
+    .services, .about, .contact {
+      padding: 4rem 1rem;
+      max-width: 1200px;
       margin: auto;
+      text-align: center;
     }
-    .services {
+    .services h2, .about h2, .contact h2 {
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+    }
+    .service-cards {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 1.5rem;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
     }
     .card {
-      background: white;
+      background-color: white;
+      padding: 2rem;
       border-radius: 8px;
-      padding: 1.5rem;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
     footer {
       background-color: #003C43;
       color: white;
+      padding: 2rem;
       text-align: center;
-      padding: 1rem;
     }
   </style>
 </head>
 <body>
+
+  <!-- Header -->
   <header>
-    <!-- Add the logo image here -->
     <img src="logo.png" alt="Denavo Health Logo" />
-    <div class="tagline">Turning Denials Into Decisions</div>
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#about">About Us</a>
+      <a href="#contact">Contact</a>
+    </nav>
   </header>
-  
-  <section>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Welcome to Denavo Health</h1>
+    <p>Your Trusted Partner in Revenue Cycle Management</p>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="services">
     <h2>Our Services</h2>
-    <div class="services">
+    <div class="service-cards">
       <div class="card">
         <h3>Revenue Cycle Management</h3>
-        <p>End-to-end RCM solutions designed to optimize collections and streamline workflows.</p>
+        <p>We provide end-to-end RCM services to streamline operations and increase revenue for healthcare organizations.</p>
       </div>
       <div class="card">
         <h3>AR & Denial Management</h3>
-        <p>Expert handling of claim denials and aged AR for maximum recovery.</p>
+        <p>Expert handling of claim denials and aged accounts receivable for improved financial recovery.</p>
       </div>
       <div class="card">
         <h3>Eligibility & Prior Authorization</h3>
-        <p>Ensure every service is approved and reimbursed without delays.</p>
+        <p>Ensure that services are approved for reimbursement and avoid delays in payment collection.</p>
       </div>
     </div>
   </section>
 
-  <section>
+  <!-- About Us Section -->
+  <section id="about" class="about">
+    <h2>About Us</h2>
+    <p>Denavo Health provides comprehensive healthcare solutions to optimize your revenue cycle, improve operational efficiency, and reduce denials.</p>
+    <p>Our experienced team works with healthcare providers to ensure smooth billing processes and maximize reimbursements.</p>
+  </section>
+
+  <!-- Contact Us Section -->
+  <section id="contact" class="contact">
     <h2>Contact Us</h2>
     <p>Email: info@denavohealth.com</p>
     <p>Phone: +1 (800) 123-4567</p>
   </section>
 
+  <!-- Footer -->
   <footer>
-    &copy; 2025 Denavo Health. All rights reserved.
+    <p>&copy; 2025 Denavo Health. All rights reserved.</p>
   </footer>
+
 </body>
 </html>
