@@ -14,9 +14,9 @@
       color: #333;
     }
     header {
-      background-color: #006D77;
-      padding: 1rem;
+      background-color: #003C43;
       color: white;
+      padding: 1rem;
       text-align: center;
     }
     header img {
@@ -26,7 +26,7 @@
     nav {
       display: flex;
       justify-content: center;
-      gap: 2rem;
+      gap: 3rem;
       padding: 1rem 0;
     }
     nav a {
@@ -39,11 +39,11 @@
       border-bottom: 2px solid #ffcc00;
     }
     .hero {
-      background-image: url('https://via.placeholder.com/1500x500'); /* Replace with your own image */
+      background-image: url('https://via.placeholder.com/1500x700'); /* Replace with your own hero image */
       background-size: cover;
       background-position: center;
       color: white;
-      padding: 100px 20px;
+      padding: 120px 20px;
       text-align: center;
     }
     .hero h1 {
@@ -53,6 +53,19 @@
     .hero p {
       font-size: 1.2rem;
       margin-top: 1rem;
+    }
+    .cta-button {
+      background-color: #ffcc00;
+      color: black;
+      padding: 15px 30px;
+      text-transform: uppercase;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-top: 20px;
+    }
+    .cta-button:hover {
+      background-color: #e6b800;
     }
     .services, .about, .contact {
       padding: 4rem 1rem;
@@ -81,6 +94,11 @@
       padding: 2rem;
       text-align: center;
     }
+    footer a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
   </style>
 </head>
 <body>
@@ -97,8 +115,9 @@
 
   <!-- Hero Section -->
   <section class="hero">
-    <h1>Welcome to Denavo Health</h1>
-    <p>Your Trusted Partner in Revenue Cycle Management</p>
+    <h1>Empowering Healthcare Revenue Cycle Management</h1>
+    <p>Maximizing reimbursements, minimizing denials, and streamlining operations.</p>
+    <a href="#contact" class="cta-button">Get Started</a>
   </section>
 
   <!-- Services Section -->
@@ -107,15 +126,15 @@
     <div class="service-cards">
       <div class="card">
         <h3>Revenue Cycle Management</h3>
-        <p>End-to-end solutions to streamline billing, reduce costs, and optimize cash flow for healthcare providers.</p>
+        <p>Optimized solutions to improve billing, reduce errors, and maximize collections.</p>
       </div>
       <div class="card">
         <h3>AR & Denial Management</h3>
-        <p>Expert denial management and accounts receivable recovery services for maximizing revenue.</p>
+        <p>Expert management of accounts receivable and denial resolution to recover lost revenue.</p>
       </div>
       <div class="card">
-        <h3>Eligibility Verification & Prior Authorization</h3>
-        <p>Ensure smooth and efficient insurance verification to avoid delays and rejections in payments.</p>
+        <h3>Eligibility & Prior Authorization</h3>
+        <p>Ensure accurate eligibility checks and prior authorizations for faster reimbursement.</p>
       </div>
     </div>
   </section>
@@ -123,11 +142,10 @@
   <!-- About Us Section -->
   <section id="about" class="about">
     <h2>About Denavo Health</h2>
-    <p>Denavo Health provides comprehensive healthcare solutions focused on maximizing reimbursements and reducing revenue cycle bottlenecks. We specialize in handling Accounts Receivable, Denials, and Revenue Cycle Management to ensure healthcare organizations remain financially sound.</p>
-    <p>Our team of experts works closely with you to optimize your billing operations and streamline your revenue cycle.</p>
+    <p>Denavo Health is committed to providing cutting-edge revenue cycle solutions to healthcare providers. With our expertise in accounts receivable, denial management, and comprehensive RCM services, we help healthcare organizations optimize their financial health and enhance operational efficiency.</p>
   </section>
 
-  <!-- Contact Us Section -->
+  <!-- Contact Section -->
   <section id="contact" class="contact">
     <h2>Contact Us</h2>
     <p>Email: info@denavohealth.com</p>
@@ -137,6 +155,7 @@
   <!-- Footer -->
   <footer>
     <p>&copy; 2025 Denavo Health. All rights reserved.</p>
+    <p><a href="https://www.denavohealth.com/privacy-policy" target="_blank">Privacy Policy</a> | <a href="https://www.denavohealth.com/terms-of-service" target="_blank">Terms of Service</a></p>
   </footer>
 
 </body>
