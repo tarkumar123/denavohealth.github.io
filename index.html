@@ -6,100 +6,203 @@
   <title>Denavo Health | RCM & AR Solutions</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
+    :root {
+      --primary: #0077cc;
+      --secondary: #f0f4f8;
+      --dark: #1a1a1a;
+      --white: #ffffff;
+    }
+
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
     }
+
     body {
       font-family: 'Inter', sans-serif;
-      color: #ffffff;
-      background-color: #1a1a1a;
+      background-color: var(--secondary);
+      color: var(--dark);
     }
+
+    /* Navbar */
+    nav {
+      background-color: var(--white);
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .logo {
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: var(--primary);
+    }
+
+    .nav-links a {
+      margin-left: 30px;
+      text-decoration: none;
+      color: var(--dark);
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: var(--primary);
+    }
+
+    /* Hero */
     header {
-      background: url('https://example.com/your-hero-image.jpg') no-repeat center center/cover;
+      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://example.com/your-logo-background.jpg') center/cover no-repeat;
       height: 100vh;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       text-align: center;
+      color: var(--white);
       padding: 0 20px;
+      margin-top: 80px;
     }
+
     header h1 {
-      font-size: 3rem;
+      font-size: 3.5rem;
       font-weight: 700;
-      margin-bottom: 20px;
     }
+
     header p {
       font-size: 1.2rem;
+      margin-top: 20px;
       max-width: 700px;
     }
-    section {
-      padding: 80px 20px;
-    }
-    .services {
-      background: url('https://example.com/your-services-image.jpg') no-repeat center center/cover;
-    }
-    .services h2 {
-      font-size: 2.5rem;
-      margin-bottom: 30px;
+
+    /* Services */
+    section.services {
+      background-color: var(--white);
+      padding: 100px 20px;
       text-align: center;
     }
+
+    .services h2 {
+      font-size: 2.5rem;
+      color: var(--primary);
+      margin-bottom: 40px;
+    }
+
     .service-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 30px;
-      max-width: 1000px;
+      max-width: 1100px;
       margin: 0 auto;
     }
+
     .service {
-      background: rgba(0, 0, 0, 0.6);
-      padding: 20px;
+      background-color: var(--secondary);
+      padding: 30px;
       border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+      transition: transform 0.3s;
     }
+
+    .service:hover {
+      transform: translateY(-5px);
+    }
+
     .service h3 {
-      font-size: 1.5rem;
+      color: var(--primary);
       margin-bottom: 10px;
     }
+
+    /* About */
+    .about {
+      padding: 80px 20px;
+      background-color: #e9f2fa;
+      text-align: center;
+    }
+
+    .about h2 {
+      color: var(--primary);
+      margin-bottom: 20px;
+    }
+
+    .about p {
+      max-width: 800px;
+      margin: auto;
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+
+    /* Footer */
     footer {
-      background-color: #0d0d0d;
+      background-color: var(--dark);
+      color: var(--white);
       text-align: center;
       padding: 40px 20px;
     }
-    footer p {
-      font-size: 1rem;
-      color: #aaa;
+
+    footer a {
+      color: #70cfff;
+      text-decoration: none;
     }
   </style>
 </head>
 <body>
 
+<nav>
+  <div class="logo">Denavo Health</div>
+  <div class="nav-links">
+    <a href="#">Home</a>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
 <header>
-  <h1>Denavo Health</h1>
-  <p>Expert AR & RCM Services for U.S. Healthcare Providers — Simplify Claims. Maximize Recovery.</p>
+  <h1>Revenue Recovery That Works</h1>
+  <p>Professional Accounts Receivable and Revenue Cycle Management solutions for U.S. healthcare providers.</p>
 </header>
 
-<section class="services">
+<section class="about" id="about">
+  <h2>About Us</h2>
+  <p>
+    With over 8 years of experience in U.S. healthcare RCM, Denavo Health offers tailored AR follow-up and claim management support. 
+    Our expertise ensures faster reimbursements, improved denial resolutions, and clean claims from start to finish.
+  </p>
+</section>
+
+<section class="services" id="services">
   <h2>Our Services</h2>
   <div class="service-grid">
     <div class="service">
       <h3>Claims Management</h3>
-      <p>End-to-end claim tracking, corrections, and timely submissions to minimize denials and improve cash flow.</p>
+      <p>Efficient claim submissions and corrections to reduce denials and accelerate payments.</p>
     </div>
     <div class="service">
       <h3>AR Follow-up</h3>
-      <p>Dedicated follow-up on aged claims and payer escalations, ensuring optimal reimbursement.</p>
+      <p>Dedicated specialists to handle aged AR, payer escalations, and account resolutions.</p>
     </div>
     <div class="service">
-      <h3>Eligibility & Benefits Verification</h3>
-      <p>Accurate insurance verification to reduce denials and improve patient experience.</p>
+      <h3>Eligibility Verification</h3>
+      <p>Pre-visit insurance verification and benefit checks to reduce front-end errors.</p>
+    </div>
+    <div class="service">
+      <h3>Denial Management</h3>
+      <p>Root cause analysis and appeals to convert denials into cash flow.</p>
     </div>
   </div>
 </section>
 
-<footer>
-  <p>© 2025 Denavo Health. All rights reserved. | <a href="mailto:info@denavohealth.com" style="color: #70cfff;">Contact Us</a></p>
+<footer id="contact">
+  <p>Contact us at <a href="mailto:info@denavohealth.com">info@denavohealth.com</a></p>
+  <p>© 2025 Denavo Health. All rights reserved.</p>
 </footer>
 
 </body>
