@@ -5,6 +5,40 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Denavo Health - Revenue Cycle Solutions</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .main-banner-div{
+      top:40%;
+      width:100%;
+    }
+
+    @media only screen and (max-width:750px){
+
+      .main-banner-div{
+        background: #ededed;
+    padding: 30px;
+    color: black;
+    position: inherit !important;
+
+      }
+
+      .main-banner-div{
+      top:10%;
+    }
+
+      .main-banner-div h1{
+         font-size: 1.4rem;
+         color: #1f2837;
+      }
+
+      .main-banner-div p{
+        font-size: 1rem;
+        line-height: 20px;
+        color: #4B5563;
+        
+      }
+    }
+    
+  </style>
 </head>
 <body class="bg-gray-100 font-sans">
   <!-- Header -->
@@ -26,13 +60,13 @@
   </header>
 
   <!-- Hero Section -->
-  <section id="home" class="relative bg-gray-200 py-24 text-center">
-    <div class="absolute inset-0">
+  <section id="home" class="relative bg-gray-200 text-center">
+    <div class="inset-0">
       <img src="images/hero-banner-colored.jpg" alt="Banner Image">
     </div>
-    <div class="relative container mx-auto px-6">
-      <h1 class="text-5xl font-bold text-white-800 mb-4">Improve Your Revenue Cycle with Denavo Health</h1>
-      <p class="text-xl text-gray-600 mb-8">Expert solutions for US healthcare professionals and hospitals to optimize financial performance.</p>
+    <div class="absolute mx-auto px-6 main-banner-div">
+      <h1 class="text-5xl font-bold text-white mb-4">Improve Your Revenue Cycle with Denavo Health</h1>
+      <p class="text-xl text-neutral-100 mb-8">Expert solutions for US healthcare professionals and hospitals to optimize financial performance.</p>
       <a href="#contact" class="bg-teal-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-teal-700">Learn More</a>
     </div>
   </section>
@@ -47,7 +81,7 @@
           <a href="#solutions" class="text-teal-600 font-semibold hover:underline">Explore Our Solutions</a>
         </div>
         <div class="md:w-1/2">
-         <img src="/images/banner.jpg" alt="Banner Image">
+         <img src="images/treatment.jpg" alt="Banner Image">
  </div>
       </div>
     </div>
